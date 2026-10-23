@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* a) Class selector */
+        .intro {
+            font-style: italic;
+            font-size: 20px;
+        }
+
+        /* b) ID selector */
+        #menu {
+            background-color: #e6f2ff;
+        }
+
+        /* c) Descendant selector */
+        #menu li {
+            color: navy;
+        }
+
+        /* d) Child selector */
+        #menu > ul > li {
+            border-left: 4px solid #04aeec;
+            padding-left: 8px;
+        }
+
+        /* e) Adjacent sibling selector */
+        h1 + p {
+            color: gray;
+        }
+
+        /* f) Attribute selector */
+        a[target="_blank"] {
+            color: red;
+        }
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise</title>
+  <!-- your CSS goes here -->
+</head>
+<body>
+<h1>Selectors</h1>
+<p class="intro">Welcome to the selectors exercise.</p>
+<p>This is a normal paragraph.</p>
+<div id="menu">
+  <ul>
+    <li>Home</li>
+    <li>About
+      <ul>
+        <li>Team</li>
+        <li>History</li>
+      </ul>
+    </li>
+    <li>Contact</li>
+  </ul>
+</div>
+<a href="https://www.epoka.edu.al" target="_blank">Epoka</a>
+<a href="mailto:info@example.com">Email</a>
+
+</body>
+</html>

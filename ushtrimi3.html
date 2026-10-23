@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #14264B;
+        }
+
+        h2 {
+            font-variant: small-caps;
+            text-decoration: underline;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        h2 + p {
+            text-indent: 30px;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        /*
+        Difference between em and rem:
+        - em is relative to the font size of the parent element.
+        - rem is relative to the root (html) font size.
+
+        Why use relative units?
+        Relative units (em, rem, %) improve responsiveness,
+        accessibility, and scalability because they adapt to user
+        settings and different screen sizes. Absolute units such
+        as px or pt remain fixed and are less flexible.
+        */
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise</title>
+  <!-- your CSS goes here -->
+</head>
+<body>
+<h1>Learning CSS</h1>
+<h2>Why do we need CSS?</h2>
+<p>CSS describes how HTML elements should be displayed on the screen. It separates content from presentation, so the same style sheet can be reused across many pages.</p>
+<p class="quote">Write once, style everywhere.</p>
+<p>Selectors, properties and values are the three building blocks of every CSS rule.</p>
+</body>
+</html>
