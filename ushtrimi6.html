@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+        tr:nth-child(odd) {
+            color: red;
+        }
+
+        tr:nth-child(even) {
+            color: gray;
+        }
+
+        /*
+        The header row counts as the first row in the table.
+        Therefore, it is an odd row (1st row).
+        
+        Row 1 (header)      -> odd -> red
+        Row 2 (Peter)       -> even -> gray
+        Row 3 (Lois)        -> odd -> red
+        Row 4 (Joe)         -> even -> gray
+        Row 5 (Cleveland)   -> odd -> red
+        */
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise</title>
+  <!-- your CSS goes here -->
+</head>
+<body>
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex: 1;
+            max-width: 250px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        /*
+        justify-content examples:
+
+        flex-start:
+        Cards are grouped at the left side of the container.
+
+        space-between:
+        First card touches the left side, last card touches
+        the right side, and the remaining space is distributed
+        between the cards.
+
+        space-around:
+        Equal space is placed around each card. The outer edges
+        receive half the spacing of the gaps between cards.
+        */
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise</title>
+  <!-- your CSS goes here -->
+</head>
+<body>
+<h1>Our Courses</h1>
+<div class="container">
+  <div class="card">
+    <h2>HTML</h2>
+    <p>Structure of web pages.</p>
+  </div>
+  <div class="card">
+    <h2>CSS</h2>
+    <p>Style and layout of web pages.</p>
+  </div>
+  <div class="card">
+    <h2>JavaScript</h2>
+    <p>Behavior and interactivity.</p>
+  </div>
+</div>
+</body>
+</html>

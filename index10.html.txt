@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex: 1;
+            max-width: 250px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        /* b) Below 800px */
+        @media screen and (max-width: 800px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 100%;
+                max-width: none;
+            }
+        }
+
+        /* d) Between 501px and 800px */
+        @media screen and (min-width: 501px) and (max-width: 800px) {
+            body {
+                background-color: #e6f2ff;
+            }
+        }
+
+        /* c) Below 500px */
+        @media screen and (max-width: 500px) {
+            .card p {
+                display: none;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* e) Landscape orientation */
+        @media only screen and (orientation: landscape) {
+            h1 {
+                color: #04529C;
+            }
+        }
+
+        /*
+        Why is the viewport meta tag needed?
+
+        It tells mobile browsers to use the device's actual width
+        when rendering the page. Without it, the page may be scaled
+        down, causing responsive layouts and media queries to behave
+        incorrectly.
+        */
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise</title>
+  <!-- your CSS goes here -->
+</head>
+<body>
+@media screen and (min-width: 321px) and (max-width: 800px) {
+  /* rules applied only in this range */
+}
+<h1>Our Courses</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>HTML</h2>
+            <p>Structure of web pages.</p>
+        </div>
+
+        <div class="card">
+            <h2>CSS</h2>
+            <p>Style and layout of web pages.</p>
+        </div>
+
+        <div class="card">
+            <h2>JavaScript</h2>
+            <p>Behavior and interactivity.</p>
+        </div>
+
+    </div>
+</body>
+</html>

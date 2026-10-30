@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .box {
+            width: 300px;
+            background-color: #e6f2ff;
+            padding: 20px;
+            border: 5px solid #04529C;
+            margin: 30px auto;
+            box-sizing: border-box;
+        }
+
+        /*
+        Padding vs Margin:
+        Padding is the space inside the border around the content,
+        while margin is the space outside the border that separates
+        the element from other elements.
+
+        box-sizing: border-box explanation:
+        With border-box, the specified width (300px) includes
+        the content, padding, and border.
+
+        Content width = 300px - (20px + 20px padding)
+                               - (5px + 5px border)
+                       = 250px
+
+        Rendered width = 300px
+        Content area width = 250px
+
+        Without border-box:
+        Total rendered width would be
+        300 + 40 + 10 = 350px.
+        */
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise</title>
+  <!-- your CSS goes here -->
+</head>
+<body>
+<div class="box">Box one</div>
+<div class="box">Box two</div>
+</body>
+</html>

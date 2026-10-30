@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* a) Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* b) All divs */
+        div {
+            border: 1px solid black;
+            padding: 1rem;
+        }
+
+        /* Center headings and reduce size */
+        h1 {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Inner block divs */
+        #header > div,
+        #bleft > div,
+        #center > div,
+        #bright > div,
+        #footer > div {
+            background-color: lightgray;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        /* c) Three columns */
+        #bleft,
+        #center,
+        #bright {
+            float: left;
+            width: 33.33%;
+        }
+
+        /* d) Footer below columns */
+        #footer {
+            clear: both;
+        }
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise</title>
+  <!-- your CSS goes here -->
+</head>
+<body>
+<div id="header">
+  <h1>Header</h1>
+  <div>block</div>
+</div>
+<div id="bleft">
+  <h1>Left</h1>
+  <div>block</div>
+  <div>block</div>
+</div>
+<div id="center">
+  <h1>Center</h1>
+  <div>block</div>
+  <div>block</div>
+  <div>block</div>
+</div>
+<div id="bright">
+  <h1>Right</h1>
+  <div>block</div>
+  <div>block</div>
+</div>
+<div id="footer">
+  <h1>Footer</h1>
+  <div>block</div>
+</div>
+</body>
+</html>
